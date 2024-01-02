@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import React from "react";
 
@@ -8,12 +7,12 @@ export default function App() {
     ["", "", ""],
     ["", "", ""],
   ];
-  const [matrix, setMatrix] = useState(initialState);
+  const [matrix, setMatrix] = React.useState(initialState);
 
-  const [char, setChar] = useState("x");
-  const [winner, setWinner] = useState("");
-  const [restartBtn, setRestartBtn] = useState(true);
-  const [count, setCount] = useState(1);
+  const [char, setChar] = React.useState("x");
+  const [winner, setWinner] = React.useState("");
+  const [restartBtn, setRestartBtn] = React.useState(true);
+  const [count, setCount] = React.useState(1);
 
   const checkWinner = () => {
     // check all rows
