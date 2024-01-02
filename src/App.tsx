@@ -125,6 +125,7 @@ export default function App() {
                     onClick={() => clickhanlder(rIndex, cIndex)}
                   >
                     {matrix[rIndex][cIndex]}
+                    {/* check for index for all cell */}
                     {/* {[rIndex] + [cIndex]} */}
                   </div>
                 ))}
