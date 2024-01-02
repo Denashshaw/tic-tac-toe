@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.cell {
+  width: 20vh;
+  height: 20vh;
+  font-size: 2rem;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.yellow {
+  background: yellow;
+}
+.orange {
+  background: orange;
+}
+
+.restart {
+  margin-top: 20px;
+  background: purple;
+  width: 10rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  &:disabled{
+    background-color: lightgrey;
+    color: white;
+    cursor: not-allowed;
+  }
+}
